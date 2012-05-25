@@ -1,0 +1,8 @@
+name = Phase2 Test Workflow
+description = Defines the workflow for content.
+core = 7.x
+version = 7.x-1.x
+
+dependencies[] = state_flow
+
+files[] = plugins/phase2_workflow.inc
