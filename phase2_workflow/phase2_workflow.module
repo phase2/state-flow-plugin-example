@@ -16,11 +16,11 @@ function phase2_workflow_permission() {
   );
 }
 
-function phase2_workflow_guard_approve($event, $permission) {
+function phase2_workflow_guard_approve($event) {
   return phase2_workflow_guard_permission($event, 'transition content to the approved state');
 }
 
-function phase2_workflow_guard_publish($event, $permission) {
+function phase2_workflow_guard_publish($event) {
   return phase2_workflow_guard_permission($event, 'transition content to the published or unpublished state');
 }
 
