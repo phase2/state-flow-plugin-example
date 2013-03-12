@@ -12,7 +12,7 @@ class Phase2Workflow extends StateFlow {
     ));
     $this->create_state('unpublished', array(
       'on_exit' => array($this, 'on_enter_unpublished'),
-    );
+    ));
 
     $this->create_event('submit_for_review', array(
       'label' => t('Submit for review'),
